@@ -205,6 +205,10 @@
     <Compile Include="Migrations\ApplicationUsers\201712221313079_initial AppUser Migration.Designer.cs">
       <DependentUpon>201712221313079_initial AppUser Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationUsers\201712221333132_admin added.cs" />
+    <Compile Include="Migrations\ApplicationUsers\201712221333132_admin added.Designer.cs">
+      <DependentUpon>201712221333132_admin added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationUsers\Configuration.cs" />
     <Compile Include="Migrations\CMSContext\201712221315563_initial CMS Migration.cs" />
     <Compile Include="Migrations\CMSContext\201712221315563_initial CMS Migration.Designer.cs">
@@ -297,6 +301,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\ApplicationUsers\201712221313079_initial AppUser Migration.resx">
       <DependentUpon>201712221313079_initial AppUser Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationUsers\201712221333132_admin added.resx">
+      <DependentUpon>201712221333132_admin added.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\CMSContext\201712221315563_initial CMS Migration.resx">
       <DependentUpon>201712221315563_initial CMS Migration.cs</DependentUpon>
