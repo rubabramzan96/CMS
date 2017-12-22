@@ -13,8 +13,15 @@ namespace CMS.Models.CMSModel
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DeviceID { get; set; }
+
+        [ForeignKey("associatedLocation")]
         public int LocationID { get; set; }
+
         public int Build { get; set; }
+
+
+        public virtual Location associatedLocation { get; set; }
+
 
     }
 }
