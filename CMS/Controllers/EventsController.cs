@@ -41,8 +41,8 @@ namespace CMS.Controllers
         // GET: Events/Create
         public ActionResult Create()
         {
-            ViewBag.EventCatID = new SelectList(db.EventCategories, "EventCatID", "Name");
-            ViewBag.LocationID = new SelectList(db.Locations, "LocationID", "Name");
+            ViewBag.EventCatID = new SelectList(db.EventCategories, "EventCatID", "EventCatID");
+            ViewBag.LocationID = new SelectList(db.Locations, "LocationID", "LocationID");
             return View();
         }
 
