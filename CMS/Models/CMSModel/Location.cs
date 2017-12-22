@@ -16,5 +16,8 @@ namespace CMS.Models.CMSModel
         public int LAT { get; set; }
         public int LONG { get; set; }
         public string Name { get; set; }
+
+        public virtual ICollection<Event> events { get; set; }
+        public virtual ICollection<Device> devices { get; set; }
     }
 }
