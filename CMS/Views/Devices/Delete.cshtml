@@ -1,0 +1,40 @@
+﻿@model CMS.Models.CMSModel.Device
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Device</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.associatedLocation.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.associatedLocation.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Build)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Build)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

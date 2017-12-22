@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CMS.Models.CMSModel.Device>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.associatedLocation.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Build)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.associatedLocation.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Build)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DeviceID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DeviceID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DeviceID })
+        </td>
+    </tr>
+}
+
+</table>
