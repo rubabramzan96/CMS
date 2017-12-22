@@ -13,8 +13,8 @@ namespace CMS.Models.CMSModel
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LocationID { get; set; }
-        public int LAT { get; set; }
-        public int LONG { get; set; }
+        public float LAT { get; set; }
+        public float LONG { get; set; }
         public string Name { get; set; }
 
         public virtual ICollection<Event> events { get; set; }

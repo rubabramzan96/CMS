@@ -1,0 +1,42 @@
+﻿@model CMS.Models.CMSModel.Location
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LONG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LONG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LocationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

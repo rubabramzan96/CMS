@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DevicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -214,6 +215,10 @@
     <Compile Include="Migrations\CMSContext\201712221315563_initial CMS Migration.cs" />
     <Compile Include="Migrations\CMSContext\201712221315563_initial CMS Migration.Designer.cs">
       <DependentUpon>201712221315563_initial CMS Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\CMSContext\201712221524256_long lat changed to float.cs" />
+    <Compile Include="Migrations\CMSContext\201712221524256_long lat changed to float.Designer.cs">
+      <DependentUpon>201712221524256_long lat changed to float.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\CMSContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -289,6 +294,11 @@
     <Content Include="Views\Devices\Details.cshtml" />
     <Content Include="Views\Devices\Edit.cshtml" />
     <Content Include="Views\Devices\Index.cshtml" />
+    <Content Include="Views\Locations\Create.cshtml" />
+    <Content Include="Views\Locations\Delete.cshtml" />
+    <Content Include="Views\Locations\Details.cshtml" />
+    <Content Include="Views\Locations\Edit.cshtml" />
+    <Content Include="Views\Locations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\CMSContext\201712221315563_initial CMS Migration.resx">
       <DependentUpon>201712221315563_initial CMS Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\CMSContext\201712221524256_long lat changed to float.resx">
+      <DependentUpon>201712221524256_long lat changed to float.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
