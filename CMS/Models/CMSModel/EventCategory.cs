@@ -14,7 +14,9 @@ namespace CMS.Models.CMSModel
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EventCatID { get; set; }
         public string Name { get; set; }
-        public Boolean Outdoor { get; set; }
-        public Boolean Family { get; set; }
+        public bool Outdoor { get; set; }
+        public bool Family { get; set; }
+
+        public virtual ICollection<Event> events { get; set; }
     }
 }
